@@ -1,0 +1,55 @@
+<head>
+	<title>Mortgage Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add CSS styling here */
+	</style>
+</head>
+<body>
+  
+	<div class="container border border-gray p-6">
+    
+		<h5 class="mb-4">Mortgage Calculator</h5>
+		<form id="mortgage-form">
+      <div data-v-c187760c="" data-format="$" class="FormControl FormControl--withLeftIcon">
+<div class="display-grid grid-cols-1 md:grid-cols-2 md:gap-6">
+  
+			<label for="house-price">House Price:</label>
+			<input id="house-price" name="house-price" required class="FormInput currency">
+        </div>
+      </div>
+      <div data-v-c187760c="" data-format="%" class="FormControl FormControl--withLeftIcon">
+<div class="display-grid grid-cols-1 md:grid-cols-2 md:gap-6">      
+			<label for="interest-rate">Interest Rate:</label>
+			<input type="number" step="0.01" id="interest-rate" name="interest-rate" required class="FormInput currency">
+        </div>
+      </div>
+      <div data-v-c187760c="" class="FormControl FormControl--withLeftIcon">
+<div class="display-grid grid-cols-1 md:grid-cols-2 md:gap-6">      
+  
+			<label for="loan-term">Loan Term (in years):</label>
+			<input type="number" id="loan-term" name="loan-term" required class="FormInput currency">
+      </div>
+      </div>
+      <div data-v-c187760c="" class="FormControl FormControl--withLeftIcon">
+<div class="display-grid grid-cols-1 md:grid-cols-2 md:gap-6">      
+			<label for="payment-frequency" style="width: 12.6em;">Payment Frequency:</label>
+			<select id="payment-frequency" name="payment-frequency" class="FormInput currency">
+				<option value="monthly">Monthly</option>
+				<option value="bi-weekly">Bi-Weekly</option>
+				<option value="weekly">Weekly</option>
+			</select>
+      </div>
+      </div>
+			<button type="submit" class="Button Button--primary">Calculate</button>
+		</form>
+
+		<div id="result"></div>
+	</div>
+
+	<script>
+		// Add JavaScript code here
+	</script>
+</body>
+</html>
